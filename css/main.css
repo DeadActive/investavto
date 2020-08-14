@@ -385,6 +385,10 @@ input[type="checkbox"]:checked + label:after {
   height: 48px;
 }
 
+.icon-news {
+  max-width: 24px;
+}
+
 .underline-green {
   border-bottom: 1px solid #26cf6a;
 }
@@ -481,13 +485,23 @@ a:hover > .button-social > object {
   z-index: 0;
 }
 
-.decoration-dark {
+.decoration-grey-dark {
   position: absolute;
   -webkit-transform: translate(-20px, 0);
           transform: translate(-20px, 0);
   width: 140px;
   height: 380px;
   background: #393d44;
+  z-index: 0;
+}
+
+.decoration-dark {
+  position: absolute;
+  -webkit-transform: translate(0, -60%);
+          transform: translate(0, -60%);
+  width: 50%;
+  height: 380px;
+  background: #292c32;
   z-index: 0;
 }
 

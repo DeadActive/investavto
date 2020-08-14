@@ -366,6 +366,7 @@ input[type="checkbox"]:checked + label:after{
     }
 
     &-news {
+        max-width: 24px;
     }
 }
 
@@ -457,13 +458,21 @@ a:hover > .button-social{
         height: 380px;
         background: #f8f8f8;
         z-index: 0;
-    }
-    &-dark {
-        position: absolute;
+        &-dark{
+            position: absolute;
         transform: translate(-20px, 0);
         width: 140px;
         height: 380px;
         background: #393d44;
+        z-index: 0;
+        }
+    }
+    &-dark {
+        position: absolute;
+        transform: translate(0, -60%);
+        width: 50%;
+        height: 380px;
+        background: $grey;
         z-index: 0;
     }
 }
