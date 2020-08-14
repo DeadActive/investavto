@@ -88,16 +88,15 @@ a {
     }
 }
 
-input[type="checkbox"]:checked, 
-input[type="checkbox"]:not(:checked)
-{
+input[type='checkbox']:checked,
+input[type='checkbox']:not(:checked) {
     position: absolute;
     left: -9999px;
     z-index: -1;
 }
 
-input[type="checkbox"]:checked + label, 
-input[type="checkbox"]:not(:checked) + label{
+input[type='checkbox']:checked + label,
+input[type='checkbox']:not(:checked) + label {
     display: inline-block;
     position: relative;
     padding-left: 35px;
@@ -105,9 +104,9 @@ input[type="checkbox"]:not(:checked) + label{
     cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label:before, 
-input[type="checkbox"]:not(:checked) + label:before {
-    content: "";
+input[type='checkbox']:checked + label:before,
+input[type='checkbox']:not(:checked) + label:before {
+    content: '';
     position: absolute;
     left: 0px;
     top: 3px;
@@ -116,10 +115,10 @@ input[type="checkbox"]:not(:checked) + label:before {
     background-color: #ffffff;
 }
 
-input[type="checkbox"]:checked + label:after, 
-input[type="checkbox"]:not(:checked) + label:after {
+input[type='checkbox']:checked + label:after,
+input[type='checkbox']:not(:checked) + label:after {
     position: absolute;
-    content: "";
+    content: '';
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -138,14 +137,13 @@ input[type="checkbox"]:not(:checked) + label:after {
     transform: rotate(-45deg);
 }
 
-input[type="checkbox"]:not(:checked) + label:after{
+input[type='checkbox']:not(:checked) + label:after {
     opacity: 0;
 }
 
-input[type="checkbox"]:checked + label:after{
+input[type='checkbox']:checked + label:after {
     opacity: 1;
 }
-
 
 .link {
     font-weight: normal;
@@ -328,16 +326,16 @@ input[type="checkbox"]:checked + label:after{
         }
     }
 
-    &-contact{
+    &-contact {
         padding-bottom: 75px;
     }
 
-    &-footer{
+    &-footer {
         border-top: 1px solid #dddddd;
         padding-top: 40px;
 
         @media (max-width: 767.98px) {
-            padding-top: 20px
+            padding-top: 20px;
         }
     }
 }
@@ -346,7 +344,7 @@ input[type="checkbox"]:checked + label:after{
     &-green {
         color: $green;
     }
-    &-grey{
+    &-grey {
         color: #dddddd;
     }
 }
@@ -401,23 +399,24 @@ input[type="checkbox"]:checked + label:after{
         height: 100%;
         display: block !important;
     }
-    &-sand{
+    &-sand {
         background: $sand;
         height: 50px;
         transform: translate(0, 50%);
     }
 }
 
-a:hover > .button-social{
+a:hover > .button-social {
     border: 1px solid $green;
 
-    & > object{
-        filter: invert(71%) sepia(9%) saturate(3608%) hue-rotate(90deg) brightness(100%) contrast(87%);
+    & > object {
+        filter: invert(71%) sepia(9%) saturate(3608%) hue-rotate(90deg)
+            brightness(100%) contrast(87%);
     }
 }
 
-.button{
-    &-social{
+.button {
+    &-social {
         width: 30px;
         height: 30px;
         display: flex;
@@ -458,19 +457,18 @@ a:hover > .button-social{
         height: 380px;
         background: #f8f8f8;
         z-index: 0;
-        &-dark{
+        &-dark {
             position: absolute;
-        transform: translate(-20px, 0);
-        width: 140px;
-        height: 380px;
-        background: #393d44;
-        z-index: 0;
+            transform: translate(-20px, 0);
+            width: 140px;
+            height: 380px;
+            background: #393d44;
+            z-index: 0;
         }
     }
     &-dark {
-        position: absolute;
+        position: relative;
         transform: translate(0, -60%);
-        width: 50%;
         height: 380px;
         background: $grey;
         z-index: 0;
@@ -688,26 +686,26 @@ div.project:nth-of-type(2n) > .media-body > h2 {
     }
 }
 
-.contact{
-    &-heading{
+.contact {
+    &-heading {
         padding-top: 75px;
         @media (max-width: 767.98px) {
             padding-top: 25px;
         }
     }
-    &-subtitle{
+    &-subtitle {
         margin-top: 50px;
         @media (max-width: 575.98px) {
             padding-top: 25px;
         }
     }
-    &-form{
+    &-form {
         background: $green;
         margin-bottom: 25px;
     }
 }
 
-input{
+input {
     height: 60px;
     background: #ffffff;
     padding-left: 2rem;
@@ -716,7 +714,7 @@ input{
     border-radius: 0;
     font-size: 18px;
 
-    &::placeholder{
+    &::placeholder {
         color: #898888;
     }
 }
@@ -733,4 +731,3 @@ input{
         background: $green !important;
     }
 }
-

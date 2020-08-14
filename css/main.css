@@ -93,15 +93,15 @@ a:hover {
   text-decoration: none;
 }
 
-input[type="checkbox"]:checked,
-input[type="checkbox"]:not(:checked) {
+input[type='checkbox']:checked,
+input[type='checkbox']:not(:checked) {
   position: absolute;
   left: -9999px;
   z-index: -1;
 }
 
-input[type="checkbox"]:checked + label,
-input[type="checkbox"]:not(:checked) + label {
+input[type='checkbox']:checked + label,
+input[type='checkbox']:not(:checked) + label {
   display: inline-block;
   position: relative;
   padding-left: 35px;
@@ -109,9 +109,9 @@ input[type="checkbox"]:not(:checked) + label {
   cursor: pointer;
 }
 
-input[type="checkbox"]:checked + label:before,
-input[type="checkbox"]:not(:checked) + label:before {
-  content: "";
+input[type='checkbox']:checked + label:before,
+input[type='checkbox']:not(:checked) + label:before {
+  content: '';
   position: absolute;
   left: 0px;
   top: 3px;
@@ -120,10 +120,10 @@ input[type="checkbox"]:not(:checked) + label:before {
   background-color: #ffffff;
 }
 
-input[type="checkbox"]:checked + label:after,
-input[type="checkbox"]:not(:checked) + label:after {
+input[type='checkbox']:checked + label:after,
+input[type='checkbox']:not(:checked) + label:after {
   position: absolute;
-  content: "";
+  content: '';
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   left: 3px;
@@ -137,11 +137,11 @@ input[type="checkbox"]:not(:checked) + label:after {
   transform: rotate(-45deg);
 }
 
-input[type="checkbox"]:not(:checked) + label:after {
+input[type='checkbox']:not(:checked) + label:after {
   opacity: 0;
 }
 
-input[type="checkbox"]:checked + label:after {
+input[type='checkbox']:checked + label:after {
   opacity: 1;
 }
 
@@ -496,10 +496,9 @@ a:hover > .button-social > object {
 }
 
 .decoration-dark {
-  position: absolute;
+  position: relative;
   -webkit-transform: translate(0, -60%);
           transform: translate(0, -60%);
-  width: 50%;
   height: 380px;
   background: #292c32;
   z-index: 0;
